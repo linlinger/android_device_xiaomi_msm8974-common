@@ -297,8 +297,6 @@ on enable-low-power
     write /sys/module/msm_thermal/core_control/enabled 1
 
 on charger
-    wait /dev/block/platform/msm_sdcc.1/by-name/system
-    mount ext4 /dev/block/platform/msm_sdcc.1/by-name/system /system wait ro barrier=1
     start irsc_util
     start rmt_storage
     # Enable Power modes and set the CPU Freq Sampling rates
