@@ -88,6 +88,9 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_LEGACY_HW_DISK_ENCRYPTION := true
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
+
 # Extended filesystem support
 TARGET_EXFAT_DRIVER := sdfat
 
