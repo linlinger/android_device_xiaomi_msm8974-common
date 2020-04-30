@@ -107,6 +107,10 @@ PRODUCT_PACKAGES += \
     libxml2 \
     Snap
 
+# CryptfsHW
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
