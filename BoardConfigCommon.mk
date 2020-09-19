@@ -177,6 +177,10 @@ VENDOR_SECURITY_PATCH := 2017-06-01
 # SELinux
 BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib/libril-qc-qmi-1.so|libaudioclient_shim.so
+
 # Time service
 BOARD_USES_QC_TIME_SERVICES := true
 
