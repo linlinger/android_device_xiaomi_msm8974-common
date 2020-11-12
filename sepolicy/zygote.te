@@ -17,3 +17,5 @@ allow webview_zygote debugfs:dir { getattr rw_dir_perms };
 allow webview_zygote debugfs_tracing:dir search;
 allow webview_zygote debugfs_tracing_debug:dir search;
 allow webview_zygote debugfs_trace_marker:file rw_file_perms;
+
+get_prop(zygote, exported_camera_prop);
