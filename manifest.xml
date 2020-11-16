@@ -21,6 +21,10 @@
         <name>android.hardware.bluetooth</name>
         <transport arch="32">passthrough</transport>
         <version>1.0</version>
+        <interface>
+            <name>IBluetoothHci</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.broadcastradio</name>
@@ -146,7 +150,7 @@
     <hal format="hidl">
         <name>android.hardware.nfc</name>
         <transport arch="32">passthrough</transport>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
             <name>INfc</name>
             <instance>default</instance>
@@ -192,6 +196,14 @@
         <name>vendor.lineage.livedisplay</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
+        <interface>
+            <name>IAdaptiveBacklight</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IAutoContrast</name>
+            <instance>default</instance>
+        </interface>
         <interface>
             <name>IDisplayColorCalibration</name>
             <instance>default</instance>
