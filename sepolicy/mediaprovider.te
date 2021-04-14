@@ -1,0 +1,1 @@
+allow mediaprovider sysfs:file rw_file_perms;

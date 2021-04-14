@@ -1,0 +1,1 @@
+allow idmap debugfs:file rw_file_perms;

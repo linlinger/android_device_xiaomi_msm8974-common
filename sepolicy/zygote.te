@@ -1,0 +1,6 @@
+allow zygote debugfs:file { getattr open write };
+allow zygote bluetooth_prop:file rw_file_perms;
+allow zygote exported_camera_prop:file rw_file_perms;
+allow zygote proc_cmdline:file rw_file_perms;
+allow zygote sysfs:dir rw_dir_perms;
+allow zygote sysfs:file rw_file_perms;
