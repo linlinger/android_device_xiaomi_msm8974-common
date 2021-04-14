@@ -19,3 +19,4 @@ allow charger_exec persist_block_device:dir { create_dir_perms search write add_
 allow charger_exec persist_block_device:file { create rw_file_perms };
 allow charger_monitor self:netlink_kobject_uevent_socket getopt;
 allow charger_monitor sysfs_spmi_dev:dir rw_file_perms;
+allow charger_monitor sysfs:file rw_file_perms;
