@@ -1,0 +1,1 @@
+allow shared_relro sysfs:file { getattr setattr rw_file_perms };

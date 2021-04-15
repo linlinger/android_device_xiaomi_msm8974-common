@@ -6,6 +6,7 @@ allow sensors persist_file:file { read write getattr open setattr };
 allow sensors persist_misc_file:dir { getattr open read search };
 allow sensors persist_misc_file:file { getattr open read setattr write };
 allow sensors property_socket:sock_file write;
-allow sensors system_data_file:file open;
+allow sensors system_data_file:file rw_file_perms;
+allow sensors system_data_file:dir rw_dir_perms;
 allow sensors system_prop:property_service set;
 allow sensors sysfs:file { append rw_file_perms };

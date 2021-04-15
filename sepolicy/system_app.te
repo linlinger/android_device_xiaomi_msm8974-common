@@ -1,3 +1,4 @@
 #============= cmhw ==============
 allow system_app display_sysfs:file { read write };
 allow system_app vibeamp_sysfs:file { read write };
+allow system_app { apex_service system_suspend_control_service }:service_manager find;
