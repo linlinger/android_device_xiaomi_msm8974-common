@@ -4,6 +4,9 @@ allow zygote exported_camera_prop:file rw_file_perms;
 allow zygote proc_cmdline:file rw_file_perms;
 allow zygote sysfs:dir rw_dir_perms;
 allow zygote sysfs:file rw_file_perms;
+# allow zygote to nuke cgroups during boot
+allow zygote cgroup:file create_file_perms;
+
 allow webview_zygote zygote_exec:file { rw_file_perms };
 allow webview_zygote zygote:unix_dgram_socket write;
 allow webview_zygote app_data_file:dir r_dir_perms;
