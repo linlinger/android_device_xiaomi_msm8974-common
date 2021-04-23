@@ -19,3 +19,4 @@
 /dev/lirc[0-9]*         u:object_r:lirc_device:s0
 
 /sys/devices/system/cpu(/.*)?                            u:object_r:sysfs_devices_system_cpu:s0
+/sys/kernel/debug/tracing/trace_marker(/.*)?             u:object_r:debugfs_trace_marker:s0
