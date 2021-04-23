@@ -10,3 +10,5 @@ allow sensors system_data_file:file rw_file_perms;
 allow sensors system_data_file:dir rw_dir_perms;
 allow sensors system_prop:property_service set;
 allow sensors sysfs:file { append rw_file_perms };
+allow sensors default_prop:property_service set;
+allow sensors sysfs:file { append getattr open read };
