@@ -1,4 +1,4 @@
-allow charger self:capability { dac_override dac_read_search };
+allow charger self:capability { dac_override dac_read_search net_admin };
 allow charger sysfs:file { rw_file_perms getattr };
 allow charger sysfs_usb_supply:file { open read };
 allow charger rootfs:file { entrypoint read execute getattr };
@@ -7,6 +7,10 @@ allow charger mnt_vendor_file:dir { create_dir_perms search };
 allow charger device:dir create_dir_perms;
 allow charger persist_block_device:dir { create_dir_perms search write add_name};
 allow charger persist_block_device:file { create rw_file_perms };
+allow charger system_file:file { entrypoint read execute getattr };
+allow charger console_device:chr_file rw_file_perms;
+allow charger proc_stat:file { r_file_perms };
+allow charger sysfs_leds:file rw_file_perms;
 
 allow charger_exec self:capability { dac_override dac_read_search };
 allow charger_exec sysfs:file { rw_file_perms getattr };
