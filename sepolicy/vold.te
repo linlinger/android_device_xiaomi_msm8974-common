@@ -1,3 +1,8 @@
 allow vold sysfs_mmc_host:file rw_file_perms;
 allow vold block_device:blk_file rw_file_perms;
 allow vold hal_bootctl_hwservice:hwservice_manager find;
+
+# Allow loading keymaster firmware
+allow vold firmware_file:dir rw_dir_perms;
+allow vold firmware_file:file r_file_perms;
+allow vold firmware_file:lnk_file read;
