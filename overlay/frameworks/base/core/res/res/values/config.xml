@@ -21,6 +21,10 @@
 
     <bool name="config_wifi_background_scan_support">true</bool>
     <bool name="config_wifi_batched_scan_supported">false</bool>
+
+    <!-- Boolean indicating whether the wifi chipset has 5GHz frequency band support -->
+    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
+
     <bool name="config_automatic_brightness_available">true</bool>
     <bool name="config_dreamsSupported">true</bool>
     <bool name="config_dreamsEnabledByDefault">false</bool>
