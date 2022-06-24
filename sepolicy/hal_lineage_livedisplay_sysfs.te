@@ -1,1 +1,0 @@
-allow hal_lineage_livedisplay_sysfs sysfs:file rw_file_perms;
